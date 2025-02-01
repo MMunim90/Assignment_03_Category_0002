@@ -57,7 +57,7 @@
       .box div:nth-child(4) {
         top: 20%;
         left: 60%;
-        animation: animate 10s linear infinite;
+        animation: animate 13s linear infinite;
       }
       .box div:nth-child(5) {
         top: 67%;
@@ -92,34 +92,34 @@
       .box div:nth-child(11) {
         top: 33%;
         left: 72%;
-        animation: animate 10s linear infinite;
+        animation: animate 11s linear infinite;
       }
       .box div:nth-child(12) {
         top: 78%;
         left: 89%;
-        animation: animate 10s linear infinite;
+        animation: animate 7s linear infinite;
       }
       .box div:nth-child(13) {
         top: 90%;
         left: 13%;
-        animation: animate 10s linear infinite;
+        animation: animate 13s linear infinite;
       }
       .box div:nth-child(14) {
         top: 50%;
         left: 50%;
-        animation: animate 10s linear infinite;
+        animation: animate 9s linear infinite;
       }
       .box div:nth-child(15) {
         top: 85%;
         left: 50%;
-        animation: animate 10s linear infinite;
+        animation: animate 12s linear infinite;
       }
       @keyframes animate {
         0% {
           transform: scale(0) translateY(0);
         }
         100% {
-          transform: scale(1.3) translateY(-90px);
+          transform: scale(1.4) translateY(-90px);
         }
       }
     </style>
@@ -147,7 +147,7 @@
         <img class="hidden lg:flex" src="c2-assets/logo-header.png" alt="" />
         <img class="lg:hidden" src="c2-assets/Group.png" alt="" />
         <div class="ml-56">
-          <ul class="hidden lg:flex lg:gap-8">
+          <ul class="hidden lg:flex lg:gap-8 text-black">
             <li><a class="hover:text-blue-700" href="">Product</a></li>
             <li><a class="hover:text-blue-700" href="">Services</a></li>
             <li><a class="hover:text-blue-700" href="">Contact us</a></li>
@@ -163,7 +163,7 @@
           <button><img src="c2-assets/cart.png" alt="" /></button>
           
           <button
-            class="btn btn-outline border-primary hover:bg-gray-300 w-28"
+            class="btn btn-outline border-primary hover:bg-gray-300 w-28 text-black"
             onclick="my_modal_1.showModal()"
           >
           Login
@@ -223,7 +223,7 @@
         </div>
       </div>
       <div class="text-center flex flex-col justify-center items-center mt-24">
-        <h1 class="font-semibold text-6xl">
+        <h1 class="font-semibold text-6xl text-black">
           Freshness
           <span class="text-primary"
             >You Can <br />
@@ -242,7 +242,7 @@
 
     <main>
       <!-- service section -->
-      <div class="flex justify-center mb-36">
+      <div class="flex justify-center mb-36 p-2">
         <div>
           <h3 class="font-semibold text-2xl md:text-4xl text-primary mb-12">
             Services
@@ -519,7 +519,7 @@
       </div>
 
       <!-- Arrival & Offers section -->
-      <div class="flex justify-center mb-36 bg-background py-12">
+      <div class="flex justify-center mb-36 bg-background py-12 relative">
         <div>
           <h3 class="font-semibold text-2xl md:text-4xl text-primary mb-12">
             Arrival & Offers
@@ -578,51 +578,53 @@
         </div>
       </div>
 
-      <!-- What People Say section -->
-       <div class="flex flex-col justify-center pb-72">
-        <h3 class="font-semibold text-2xl md:text-4xl text-primary mb-12">
-          What People Say
+      <!-- Frequently Asked Questions section -->
+      <div class="relative">
+        <h3 class="font-semibold text-2xl md:text-4xl text-primary mb-4 md:m-auto md:mb-8 pl-3 md:pl-[115px] lg:pl-[405px]">
+          Frequently Asked Questions
         </h3>
-        <marquee behavior="scroll" direction="left" scrolldelay="0" scrollamount="15">
-          <div class="flex gap-10">
-            <div class="card lg:card-side bg-base-100 shadow-xl">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-                  alt="Album" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">New album is released!</h2>
-                <p>Click the button to listen on Spotiwhy app.</p>
+         <div class="flex flex-col lg:flex-row gap-8 p-3 justify-center mb-96 lg:mx-36 lg:gap-16">
+          <img class="rounded-3xl border-2 border-primary md:w-[700px] md:h-[700px] md:m-auto lg:w-[410px] lg:h-[410px] lg:my-auto lg:mx-0" src="c2-assets/faq.jpg" alt="">
+          <div class="flex flex-col gap-1 lg:my-auto lg:mx-0">
+            <div class="collapse collapse-arrow border-2 border-primary lg:w-[730px]">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">Are your products organic?</div>
+              <div class="collapse-content">
+                <p>Yes, we prioritize organic and natural products to ensure freshness, quality, and sustainability.</p>
               </div>
             </div>
-  
-            <div class="card lg:card-side bg-base-100 shadow-xl">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-                  alt="Album" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">New album is released!</h2>
-                <p>Click the button to listen on Spotiwhy app.</p>
+            <div class="collapse collapse-arrow border-2 border-primary lg:w-[730px]">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">Do you offer home delivery?</div>
+              <div class="collapse-content">
+                <p>Yes, we provide home delivery services. Delivery times and charges may vary based on location.</p>
               </div>
             </div>
-  
-            <div class="card lg:card-side bg-base-100 shadow-xl">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-                  alt="Album" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">New album is released!</h2>
-                <p>Click the button to listen on Spotiwhy app.</p>
+            <div class="collapse collapse-arrow border-2 border-primary lg:w-[730px]">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">How can I place an order?</div>
+              <div class="collapse-content">
+                <p>ou can place an order through our website, mobile app, or by visiting our store.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border-2 border-primary lg:w-[730px]">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">What payment methods do you accept?</div>
+              <div class="collapse-content">
+                <p>We accept cash, credit/debit cards, mobile banking, and digital wallets for a smooth shopping experience.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border-2 border-primary lg:w-[730px]">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">What are your store hours?</div>
+              <div class="collapse-content">
+                <p>Our store is open from 8 AM to 11 PM, 7 Days of the Week.</p>
               </div>
             </div>
           </div>
-        </marquee>
-       </div>
+         </div>
+      </div>
+       
     </main>
 
       <footer class="footer bg-[#179800] text-base-content flex flex-col h-auto pl-8 pb-12 pt-72 lg:flex-row lg:p-28
